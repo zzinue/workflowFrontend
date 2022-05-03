@@ -1,0 +1,13 @@
+        .details {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 25px;
+        }
+        
+        .more_products {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 25px;
+        }
