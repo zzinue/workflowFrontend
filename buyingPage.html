@@ -12,8 +12,15 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+        <div class="container-fluid d-flex justify-content-around">
+            <a class="navbar-brand" href="#">
+                <span class="material-icons">room</span></a>
+            <a class="navbar-brand" href="#">Refaacionara APP</a>
+            <a class="navbar-brand" href="#"><span class="material-icons">account_circle</span></a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light ">
         <div class="container-fluid">
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -22,24 +29,24 @@
         </div>
     </nav>
 
-    <main>
-        <div class="card bg-dark text-white my-4" style=" width: 235px; height: 235px; margin: 10px 70px;">
-            <img src="https://www.blankstyle.com/files/imagefield_default_images/notfound_0.png" class="card-img" alt="...">
-        </div>
-        <div class="card mb-3 border-0" style=" width: 235; margin: 10px 70px;">
-
-            <p class="h6 text-center">Descripcion del producto:</p>
-
-            <p class="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa porro eos in blanditiis! Alias quo animi magni, hic ipsum quasi.
-            </p>
-        </div>
-
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-secondary" type="button" onclick="login(event)">Comprar</button>
-            <button class="btn btn-secondary" type="button">Cotizar</button>
+    <main class="d-flex justify-content-center  mt-5">
+        <div class="card mb-3" style="max-width: 90% ; ">
+            <div class="row g-0 ">
+                <div class=" col-md-4   ">
+                    <img src="https://alianzaautomotriz.com/wp-content/uploads/2020/04/refaccionaria.jpg " class="img-fluid rounded-start " alt="... ">
+                </div>
+                <div class="col-md-8  d-flex justify-content-center">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Duralast Max Balata Semi-Metalica DMAX433</h5>
+                        <p class="card-text ">Refacción # DMAX433</p>
+                        <button type="button " class="btn btn-primary " onclick="login(event)">Comprar</button>
+                        <button type="button " class="btn btn-primary ">Cotizar</button>
+                        <p class="card-text "><small class="text-muted ">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <script src="./index.js"></script>
+    <script src="./index.js "></script>
 
 </body>

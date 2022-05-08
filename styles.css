@@ -11,3 +11,12 @@
             justify-content: flex-start;
             margin-top: 25px;
         }
+        
+        .mainsecond {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #logo {
+            color: red;
+        }
