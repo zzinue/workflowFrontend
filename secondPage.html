@@ -11,16 +11,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
+<header class="container-fluid bg-primary">
+    <p class="text-light mb-0 p-2 fs-6  d-flex justify-content-center">
+</header>
+
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
-        <div class="container-fluid d-flex justify-content-around">
-            <a class="navbar-brand" href="#">
-                <span class="material-icons">room</span></a>
-            <a class="navbar-brand" href="#">Refaacionara APP</a>
-            <a class="navbar-brand" href="#"><span class="material-icons">account_circle</span></a>
-        </div>
-    </nav>
+    <style>
+        body {
+            background: #ffff;
+        }
+    </style>
+    <form class="d-flex w-75 m-4 ">
+        <input class="form-control me-2" type="email" placeholder="Buscar..." aria-label="Search">
+        <button class="btn btn-primary btn-primary-outline-success" type="button">Buscar</button>
+    </form>
 
     <main class="mainsecond">
         <div class="container refacciones mt-5">
@@ -83,149 +88,106 @@
       <option value="2 ">Two</option>
       <option value="3 ">Three</option>
         </select>
-
     </main>
 
-    <section class="cards d-flex flex-row  justify-content-evenly mt-5 ">
-        <div class="card" style="width: 18rem;">
-            <img src="https://www.ro-des.com/images/mecanica/filtro_aire.jpg" onclick="buyingPage(event)" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+    <div class="row m-5 p-5">
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://www.ro-des.com/images/mecanica/filtro_aire.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Filtro</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary" onclick="buyingPage(event)">Ver detalles</a>
+                </div>
             </div>
         </div>
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://www.brakepartsinc.com/dam/jcr:01564c22-1d76-4b16-8ca6-123479465ff3/bpi_brake_pads.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://cdn1.coppel.com/images/catalog/pm/5060613-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-5 p-5">
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://contentinfo.autozone.com/znetcs/product-info/es/MX/eas/LPSC10147-2/image/10/" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://contentinfo.autozone.com/znetcs/product-info/es/MX/mor/PS-31533/image/10/" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://mundocarros.info/wp-content/uploads/2019/07/Sensor-oxigenoo-e1587528765278.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-5 p-5">
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://refaccionariamario.info/70681-large_default/bujia-delgada-con-electrodo-de-cobre-ngk-para-aveo.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_606831-MLM41390730376_042020-V.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col lg-3">
+            <div class="card" style="width: 20rem;">
+                <img src="https://mayoreocarss.com.mx/686-large_default/empaque-cabeza-intrepid-concord-35-24v-93-97-laminado.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </section>
-    <section class="cards d-flex flex-row  justify-content-evenly  mt-5 ">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </section>
-    <section class="cards d-flex flex-row  justify-content-evenly  mt-5 ">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+    <footer class="footer d-md-none">
         <nav class="navbar fixed-bottom navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">

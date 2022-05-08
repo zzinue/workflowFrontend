@@ -3,110 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style_principal.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="./styles.css">
     <title>Login</title>
 
-    <body>
-        <style>
-            body {
-                background: #CDCACD;
-                background: linear-gradient(to right, #3B66F7, #CDCACD);
-            }
-            
-            .bg {
-                background-image: url ("https://manoamano.com/attachments/3b647fc239abe5699b118869d2c030162a05ff68/store/fit/400/400/f4fdc044390cb0f7171a29455e9ccea8141e09666a9c0fc511e96065bd2c/logo.gif");
-                background-position: center center;
-            }
-        </style>
-        <div class="container w-75  mt-5 rounded shadow">
-            <div class="row align-items-stretch">
-                <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+    <body id="loginPage">
 
+        <section class="form my-4 mx-5">
+            <div class="container">
+                <div class="row no-gutters " id="rowLogin">
+                    <div class="col-lg-5" id="containerLogo">
+                        <img src="./logo/LogoMakr-7sC0Bq.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-7 px-5 pt-5 ">
+                        <h1 class="py-3">Bienvenido</h1>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <input type="email" placeholder="Correo Electónico" class="form-control my-3 p-3">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <input type="password" placeholder="********" class="form-control  my-3 p-3">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-primary mt-3 mb-5" id="buttonLogin">Login</button>
+                                </div>
+                                <a href="#">Olvidaste tu Contraseña</a>
+                                <p>Aún no tienes cuenta <a href="#">Registrate Aquí</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+            </div>
+        </section>
 
 
-                <div class="col bg-white p-5 rounded-end">
-                    <div class="text end">
-                        <img src="https://www.segurosimple.com/mx/Images/landing/Volkswagen-mx.png" alt="logo" width="48">
-                    </div>
-                    <h2 class="fw-bold text-center py-5">Bienvenido</h2>
 
-                    <form action="#">
-
-                        <div class="mb-4">
-                            <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" name="email">
-                            <div class="mb-4">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="password">
-                                <div class="mb-4 form-check">
-                                    <input type="checkbox" name="connected" class="check-input">
-                                    <label for="connected" class="form-check-label">Mantenerme conectado</label>
-
-                                </div>
-
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-outline-primary" onclick="infoProduct(event)">Iniciar Sesión</button>
-                                </div>
-                                <div class="my-3">
-                                    <span>No tienes cuenta <a href="#">Registrate</a></span><br>
-                                    <span><a href="#">Recuperar contraseña</span></a>
-                                </div>
-                            </div>
-                    </form>
-                    <!--- loging con redes sociales -->
-                    <div class="container w-100 my-5">
-                        <div class="row text-center">
-                            <div class="col-12">Iniciar Sesión</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn btn-outline-primary w-100 my-1">
-                                <div class="row align-items-center ">
-                                <div class="col-2 d-none d-md-block">
-                                <img src="https://www.lifeder.com/wp-content/uploads/2019/10/ventajas-desventajas-facebook.jpg" alt="" width="32">
-                                </div> 
-                                
-                                <div class="col-10 text-center d-none d-md-block">
-                                    Facebook
-                                    </div>
-                                </div>
-                            
-                            </button>
-
-                            </div>
-                            <div class="container w-100 my-5">
-                                <div class="row text-center">
-                                    <div class="col-12">O Iniciar Sesión con:</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <button class="btn btn-outline-danger w-100 my-1">
-                                        <div class="row align-items-center ">
-                                        <div class="col-2">
-                                        <img src="https://pbs.twimg.com/profile_images/1311763847775125516/mvBRhlDs_400x400.jpg" alt="" width="32">
-                                        </div> 
-                                        
-                                        <div class="col-10 text-center">
-                                            Google
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </button>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <script src="./index.js"></script>
 
 </html>
